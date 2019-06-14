@@ -27,6 +27,7 @@ export default class Palette extends Component {
         background={color[format]}
         name={color.name}
         key={color.id}
+        showLink={true}
         moreUrl={`/palette/${id}/${color.id}`}
       />
     ));
