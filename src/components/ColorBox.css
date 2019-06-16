@@ -59,6 +59,10 @@
   font-size: 12px;
 }
 
+.light-text {
+  color: white;
+}
+
 .see-more {
   background: rgba(255, 255, 255, 0.3);
   position: absolute;
@@ -70,6 +74,10 @@
   height: 30px;
   text-align: center;
   line-height: 30px;
+}
+
+.dark-text {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .copy-overlay {
