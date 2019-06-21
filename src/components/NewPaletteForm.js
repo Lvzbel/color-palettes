@@ -14,7 +14,7 @@ import Button from "@material-ui/core/Button";
 import DraggableColorList from "./DraggableColorList";
 import { ChromePicker } from "react-color";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
-import { arrayMove } from "react-sortable-hoc";
+import arrayMove from "array-move";
 
 const drawerWidth = 400;
 
