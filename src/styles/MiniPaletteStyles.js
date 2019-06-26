@@ -39,7 +39,6 @@ export default {
     position: "relative",
     marginBottom: "-7px"
   },
-  delete: {},
   deleteIcon: {
     boxSizing: "content-box",
     color: "white",
