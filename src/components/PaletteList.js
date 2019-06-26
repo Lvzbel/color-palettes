@@ -23,6 +23,7 @@ class PaletteList extends Component {
                 {...palette}
                 handleDelete={deletePalette}
                 key={palette.id}
+                id={palette.id}
                 handleClick={() => this.goToPalette(palette.id)}
               />
             ))}
