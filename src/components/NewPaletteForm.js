@@ -68,10 +68,17 @@ class NewPaletteForm extends Component {
   addRamdonColor() {
     // Picks ramdon color from existing palettes
     const allColors = this.props.palettes.map(p => p.colors).flat();
-    const rand = Math.floor(Math.random() * allColors.length);
-    const ramdonColor = allColors[rand];
-    this.setState({ colors: [...this.state.colors, ramdonColor] });
-    // Add Logic to prevent duplicate colors in the same palette
+    let rand;
+    let randomColor;
+    let isDuplicateColor = true;
+    while (isDuplicateColor) {
+      rand = Math.floor(Math.random() * allColors.length);
+      randomColor = allColors[rand];
+      isDuplicateColor = this.state.colors.some(
+        color => color.name == randomColor.name
+      );
+    }
+    this.setState({ colors: [...this.state.colors, randomColor] });
   }
 
   removeColor(colorName) {
