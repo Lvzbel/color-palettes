@@ -1,5 +1,5 @@
 import sizes from "./sizes";
-import bg from "./bg.svg";
+import skull from "../img/skulls.svg";
 
 export default {
   "@global": {
@@ -12,14 +12,13 @@ export default {
     }
   },
   root: {
-    // backgroundColor: "blue",
     height: "100vh",
     display: "flex",
     alignItems: "flex-start",
     justifyContent: "center",
-    /* background by SVGBackgrounds.com */
     backgroundColor: "#611daa",
-    backgroundImage: `url(${bg})`,
+    backgroundImage: `url(${skull})`,
+    fill: "#fff",
     overflow: "scroll"
   },
   heading: {
