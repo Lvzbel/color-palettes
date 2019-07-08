@@ -60,5 +60,8 @@ export default {
       gridTemplateColumns: "repeat(1, 100%)",
       gap: "1.4rem"
     }
+  },
+  link: {
+    fontSize: "1.2rem"
   }
 };
